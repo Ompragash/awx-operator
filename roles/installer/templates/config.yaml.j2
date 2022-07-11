@@ -29,6 +29,9 @@ data:
     STATIC_URL = '{{ (ingress_path + '/static/').replace('//', '/') }}'
     PROJECTS_ROOT = '/var/lib/awx/projects'
     JOBOUTPUT_ROOT = '/var/lib/awx/job_status'
+    
+    # Keeps the runner artifact tmp files
+    AWX_CLEANUP_PATHS=False
 
     IS_K8S = True
 
