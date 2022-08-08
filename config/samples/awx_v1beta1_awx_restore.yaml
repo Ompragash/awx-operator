@@ -1,0 +1,10 @@
+---
+apiVersion: awx.ansible.com/v1beta1
+kind: AWXRestore
+metadata:
+  name: example-awx-restore
+  namespace: awx
+spec:
+  deployment_name: example-awx
+  no_log: false
+  
